@@ -1,4 +1,35 @@
-GET http://localhost:5000/api/values
+###
+GET http://localhost:5000/api/activities
+
+### 
+GET http://localhost:5000/api/activities/7f51407f-0993-4048-9ea6-5da68faa34f0
 
 ###
-GET http://localhost:5000/api/values/2
+POST http://localhost:5000/api/activities
+Content-Type: application/json
+
+{
+    "id": "7f51407f-0993-4048-9ea6-5da68faa34f2",
+    "title": "Past Activity 123412343",
+    "description": "Activity 2 asdfasfasdwegwge ago",
+    "category": "drin134213ks",
+    "date": "2019-10-15T21:39:01.7744925",
+    "city": "Loneqwegdon",
+    "venue": "Pwefwub"
+}
+
+###
+PUT http://localhost:5000/api/activities/7f51407f-0993-4048-9ea6-5da68faa34f2
+Content-Type: application/json
+
+{
+    "title": "Past Activity 1234234123421343312343",
+    "description": "Activity 2 asdfasfasdwegwge ago",
+    "category": "drin134213ks",
+    "date": "2019-10-15T21:39:01.7744925",
+    "city": "Loneqwegdon",
+    "venue": "Pwefwub"
+}
+
+###
+DELETE http://localhost:5000/api/activities/7f51407f-0993-4048-9ea6-5da68faa34f2

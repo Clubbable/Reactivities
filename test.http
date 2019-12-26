@@ -1,8 +1,19 @@
 ###
 GET http://localhost:5000/api/activities
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiLCJuYmYiOjE1NzczMjQ4NTksImV4cCI6MTU3NzkyOTY1OSwiaWF0IjoxNTc3MzI0ODU5fQ.aHiFJ0Ok4nXGD-kJNRxJWJCvIlghk6dd_N4lw8sfQEboxbYKZGBqqjQCU1A3Q6MCVpcr6FWPj_mp3pFg0mYKlg
+
 
 ### 
-GET http://localhost:5000/api/activities/f1c744a4-942b-49d4-a89d-6b53823ad3bc
+GET http://localhost:5000/api/activities/35e65508-9889-4885-9316-07b9d9d27b7b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiLCJuYmYiOjE1NzczMjQ4NTksImV4cCI6MTU3NzkyOTY1OSwiaWF0IjoxNTc3MzI0ODU5fQ.aHiFJ0Ok4nXGD-kJNRxJWJCvIlghk6dd_N4lw8sfQEboxbYKZGBqqjQCU1A3Q6MCVpcr6FWPj_mp3pFg0mYKlg
+
+###
+GET http://localhost:5000/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiLCJuYmYiOjE1NzczMjQ4NTksImV4cCI6MTU3NzkyOTY1OSwiaWF0IjoxNTc3MzI0ODU5fQ.aHiFJ0Ok4nXGD-kJNRxJWJCvIlghk6dd_N4lw8sfQEboxbYKZGBqqjQCU1A3Q6MCVpcr6FWPj_mp3pFg0mYKlg
+
 
 ###
 POST http://localhost:5000/api/activities
@@ -27,3 +38,23 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:5000/api/activities/7f35407f-0993-4048-9ea6-5da68faa34f2
+
+###
+POST http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "bob@test.com",
+    "password": "Pa$$w0rd"
+}
+
+###
+POST http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+    "email": "tes33@",
+    "password": "asdgewgwegewg",
+    "displayName": "testest",
+    "userName": "testesttset"
+}

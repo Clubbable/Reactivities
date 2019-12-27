@@ -5,12 +5,23 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiL
 
 
 ### 
-GET http://localhost:5000/api/activities/35e65508-9889-4885-9316-07b9d9d27b7b
+GET http://localhost:5000/api/activities/4641D21F-DCC8-4754-8F36-F1568A4648CB
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiLCJuYmYiOjE1NzczMjQ4NTksImV4cCI6MTU3NzkyOTY1OSwiaWF0IjoxNTc3MzI0ODU5fQ.aHiFJ0Ok4nXGD-kJNRxJWJCvIlghk6dd_N4lw8sfQEboxbYKZGBqqjQCU1A3Q6MCVpcr6FWPj_mp3pFg0mYKlg
 
 ###
+DELETE http://localhost:5000/api/activities/62607897-74f1-4dd7-9fda-e06957e14967
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJ0b20iLCJuYmYiOjE1Nzc0MDczNTAsImV4cCI6MTU3ODAxMjE1MCwiaWF0IjoxNTc3NDA3MzUwfQ.na71y5fwzi2DQvjgb7tHMUVNHrTxrpkv6A4l52QU5b5TrSIJuWZCsuThPmk7z0CmurIRlwmZs0rMXHtQws5ALw
+
+
+###
 GET http://localhost:5000/api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiLCJuYmYiOjE1NzczMjQ4NTksImV4cCI6MTU3NzkyOTY1OSwiaWF0IjoxNTc3MzI0ODU5fQ.aHiFJ0Ok4nXGD-kJNRxJWJCvIlghk6dd_N4lw8sfQEboxbYKZGBqqjQCU1A3Q6MCVpcr6FWPj_mp3pFg0mYKlg
+
+###
+POST http://localhost:5000/api/activities/35e65508-9889-4885-9316-07b9d9d27b7b/attend
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiLCJuYmYiOjE1NzczMjQ4NTksImV4cCI6MTU3NzkyOTY1OSwiaWF0IjoxNTc3MzI0ODU5fQ.aHiFJ0Ok4nXGD-kJNRxJWJCvIlghk6dd_N4lw8sfQEboxbYKZGBqqjQCU1A3Q6MCVpcr6FWPj_mp3pFg0mYKlg
 
@@ -18,9 +29,10 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiL
 ###
 POST http://localhost:5000/api/activities
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJib2IiLCJuYmYiOjE1NzczMjQ4NTksImV4cCI6MTU3NzkyOTY1OSwiaWF0IjoxNTc3MzI0ODU5fQ.aHiFJ0Ok4nXGD-kJNRxJWJCvIlghk6dd_N4lw8sfQEboxbYKZGBqqjQCU1A3Q6MCVpcr6FWPj_mp3pFg0mYKlg
 
 {
-    "title": "yourface",
+    "title": "yourfac4e2e",
     "description": "Activity 2 asdfasfasdwegwge ago",
     "category": "drin134213ks",
     "date": "2019-10-15T21:39:01.7744925",
@@ -29,7 +41,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:5000/api/activities/7f51407f-0993-4048-9ea6-5da68faa34f2
+PUT http://localhost:5000/api/activities/4641d21f-dcc8-4754-8f36-f1568a4648cb
 Content-Type: application/json
 
 {
@@ -37,14 +49,11 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5000/api/activities/7f35407f-0993-4048-9ea6-5da68faa34f2
-
-###
 POST http://localhost:5000/api/user/login
 Content-Type: application/json
 
 {
-    "email": "bob@test.com",
+    "email": "tom@test.com",
     "password": "Pa$$w0rd"
 }
 
